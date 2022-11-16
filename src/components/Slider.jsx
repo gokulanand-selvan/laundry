@@ -8,6 +8,7 @@ export default function Slider() {
         <Box>
 <img src={banner1} alt="imh"/>
         </Box>
+        
     </div>
   )
 }
