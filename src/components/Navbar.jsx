@@ -5,25 +5,26 @@ import Promac from "./images/logo.webp"
 export const Navbar = () => {
 
     return (
-        <Box>
+        <Box sx={{}}>
             <Box sx={{
                 background: "#f4f4f4",
                 height: '50px',
-               
+                opacity:90
             }} >
                 <ul style={{
                     display: "flex",
                     justifyContent: "space-evenly",
                     listStyleType: "none",
                     margin: '0px',
-                    paddingTop:"13px"
+                    paddingTop: "13px",
+                    opacity:90,
 
                 }}>
                     <li>
                         <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>  Request </a>
                     </li>
                     <li>
-                        mob number
+                        📞  <a href='link' style={{ textDecoration: "none", color: ' inherit' }}> 8754916425 </a>
                     </li>
                     <li>
                         <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>  Find the laundry room colsest to you </a>
@@ -37,10 +38,11 @@ export const Navbar = () => {
                     justifyContent: "space-evenly",
                     listStyleType: "none",
                     alignItems: "center",
+                    opacity:90,
                 }}>
                     <li>
-                        <a href='link' style={{ textDecoration: "none", color: ' inherit' }}> <Image sx={{ height: "60", width: "158" }}
-                            src={Promac} /> </a>
+                        {/* <a href='link' style={{ textDecoration: "none", color: ' inherit' }}> <Image sx={{ height: "60", width: "158" }}
+                            src={Promac} /> </a> */}
                     </li>
                     <li>
                         <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>   ABOUT</a>
@@ -64,19 +66,17 @@ export const Navbar = () => {
                         <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>   BLOG</a>
                     </li>
                     <li>
-                        <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>  
-                        
-                         <Button colorScheme='teal' variant='outline' sx={{ padding: '11px 23px' }}>REQUEST PICK UP </Button> </a>
+                        <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>
+                        <Button colorScheme='teal' variant='outline' sx={{ padding: '11px 23px' }}>REQUEST PICK UP </Button> </a>
                     </li>
                     <li>
                         <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>    LOGO</a>
                     </li>
-
                 </ul>
             </Box>
-            <Divider orientation='horizontal'  />
+            <Divider orientation='horizontal' />
 
-            
+
         </Box>
 
     );
