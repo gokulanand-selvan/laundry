@@ -10,8 +10,6 @@ function App() {
     <>
   <Navbar />
   <Slider />
-  {/* <Imageslider /> */}
-  <br></br>
   <Home />
   </>
   )

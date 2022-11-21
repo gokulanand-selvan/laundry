@@ -1,28 +1,32 @@
-import Imageslider from "./Imageslider";
-import banner1 from './images/home1-banner1.jpg'
-import banner2 from './images/home-2-banner2.jpg'
+import ImageSlider from "./Imageslider";
+import banner1 from './images/home1.jpg'
+import banner2 from './images/home2.jpg'
+import banner3 from './images/banner3.jpg'
+
+
 const App = () => {
     const slides =
         [
+           
             {
-                image: { banner1 }, title: "banner1"
+                url: banner1 , title: "banner1"
             },
             {
-                image: { banner2 }, tittle: "banner2"
+                url: banner2 , tittle: "banner2"
             },
             {
-                image: { banner2 }, tittle: "banner2"
+                url: banner3 , tittle: "banner2"
             }
         ];
     const containerStyles = {
-        width: "500px",
-        height: "280px",
+        width: "100%",
+        height: "100vh",
         margin: "0 auto",
     };
     return (
         <div>
             <div style={containerStyles}>
-                <Imageslider slides={slides} />
+                <ImageSlider slides= {slides} />
             </div>
         </div>
     );

@@ -41,8 +41,8 @@ export const Navbar = () => {
                     opacity:90,
                 }}>
                     <li>
-                        {/* <a href='link' style={{ textDecoration: "none", color: ' inherit' }}> <Image sx={{ height: "60", width: "158" }}
-                            src={Promac} /> </a> */}
+                        <a href='link' style={{ textDecoration: "none", color: ' inherit' }}> <Image sx={{ height: "60", width: "158" }}
+                            src={Promac} /> </a>
                     </li>
                     <li>
                         <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>   ABOUT</a>
