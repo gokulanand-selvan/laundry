@@ -8,7 +8,7 @@ import EmployeeSlide from './employeeSlider/EmployeeSlide'
 import Work from './Work'
 
 export default function Home() {
-   
+
     return (
         <Box>
             <Box>
@@ -38,10 +38,10 @@ export default function Home() {
             <About
                 title="About Us.."
                 image={Promac}
-                subtitle= " is a full service garment care company offering a wide range of services including laundry, ironing and dry cleaning in Kolkata, India. Whether it's men's, women's or children's wear or beddings and upholstery; we are capable of taking care of all. We provide our services to organizations like hotels, hospitals and institutions as well. We are staffed with adequately trained and experienced professionals who are skilful enough to take care of all your laundry and dry cleaning needs. We have a state of the art workshop having environment friendly equipments that gives out best results without compromising with the environment"
+                subtitle=" Promac is a full service garment care company offering a wide range of services including laundry, ironing and dry cleaning in Kolkata, India. Whether it's men's, women's or children's wear or beddings and upholstery; we are capable of taking care of all. We provide our services to organizations like hotels, hospitals and institutions as well. We are staffed with adequately trained and experienced professionals who are skilful enough to take care of all your laundry and dry cleaning needs. We have a state of the art workshop having environment friendly equipments that gives out best results without compromising with the environment"
                 sideimage={clip}
-                />
-            <EmployeeSlide  />    
+            />
+            <EmployeeSlide />
             <Work />
         </Box>
     )

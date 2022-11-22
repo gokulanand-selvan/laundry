@@ -7,15 +7,15 @@ import banner3 from './images/banner3.jpg'
 const App = () => {
     const slides =
         [
-           
+
             {
-                url: banner1 , title: "banner1"
+                url: banner1, title: "banner1"
             },
             {
-                url: banner2 , tittle: "banner2"
+                url: banner2, tittle: "banner2"
             },
             {
-                url: banner3 , tittle: "banner2"
+                url: banner3, tittle: "banner2"
             }
         ];
     const containerStyles = {
@@ -26,7 +26,7 @@ const App = () => {
     return (
         <div>
             <div style={containerStyles}>
-                <ImageSlider slides= {slides} />
+                <ImageSlider slides={slides} />
             </div>
         </div>
     );

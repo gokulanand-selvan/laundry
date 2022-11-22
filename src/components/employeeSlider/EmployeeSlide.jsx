@@ -7,9 +7,9 @@ import EmployeeImageSlider from './EmployeeImageSlider';
 export default function EmployeeSlide() {
 
     const employeeImage = [
-        {name:ramesh},
-        {name : kuppu},
-        {name :ramesh},
+        {name:ramesh , identity:"BaluDas" , posting:"customer" , Review: "  ❝Service is very Satisfactoary❞ " } ,
+        {name : kuppu , identity: "RiyaRaj" , posting:"customer" , Review: " ❝Good Response❞ " },
+        {name :ramesh , identity: "Ramesh" , posting:"customer" , Review: " ❝Quick Delivery❞ "},
     ]
 
     // <img src={employeeImage[currentIndex].name} alt="emim"/>

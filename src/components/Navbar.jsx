@@ -1,5 +1,5 @@
 import React from 'react'
-import { background, Box, Button, Divider, Image, } from '@chakra-ui/react'
+import { Box, Button, Image, } from '@chakra-ui/react'
 import Promac from "./images/logo.webp"
 
 export const Navbar = () => {
@@ -9,7 +9,7 @@ export const Navbar = () => {
             <Box sx={{
                 background: "#f4f4f4",
                 // height: '50px',
-                opacity:90,
+                opacity: 90,
             }} >
                 <ul style={{
                     display: "flex",
@@ -17,9 +17,9 @@ export const Navbar = () => {
                     listStyleType: "none",
                     margin: '0px',
                     paddingTop: "13px",
+                    width: "100%",
+                    backgroundColor: "grey",
                     // position:"fixed",
-                    width:"100%",
-                    backgroundColor:"grey",
 
                 }}>
                     <li>
@@ -34,18 +34,18 @@ export const Navbar = () => {
                 </ul>
             </Box>
 
-            <Box sx={{  textAlign:"center", display:"flex",flexDirection:"row",justifyContent:"space-evenly"}} >
-                <a href='link' style={{ textDecoration: "none", color: ' inherit',paddingLeft:"84px" }}> <Image  height= "40px" width= "120px" color="GrayText"   src={Promac} /> </a>
+            <Box sx={{ textAlign: "center", display: "flex", flexDirection: "row", justifyContent: "space-evenly" }} >
+                <a href='link' style={{ textDecoration: "none", color: ' inherit', paddingLeft: "84px" }}> <Image height="40px" width="120px" color="GrayText" src={Promac} /> </a>
                 <ul style={{
                     display: "flex",
                     justifyContent: "space-evenly",
                     listStyleType: "none",
                     alignItems: "center",
-                    background:"white",
-                    width:"100%",
+                    background: "white",
+                    width: "100%",
                     // position:"fixed",
                     // marginTop: '-14px',
-                  
+
                 }}>
                     <li>
                     </li>
@@ -72,7 +72,7 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>
-                        <Button colorScheme='teal' variant='outline' sx={{ padding: '11px 23px' }}>REQUEST PICK UP </Button> </a>
+                            <Button colorScheme='teal' variant='outline' sx={{ padding: '11px 23px' }}>REQUEST PICK UP </Button> </a>
                     </li>
                     <li>
                         <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>    LOGO</a>

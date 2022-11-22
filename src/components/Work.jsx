@@ -20,8 +20,8 @@ export default function Work() {
     ]
 
     return (
-        <Box sx={{height:"30rem", paddingBottom:"13rem"}} >
-            <div style={{alignItems:"center",textAlign:"center", }}>
+        <Box sx={{ height: "30rem", paddingBottom: "13rem" }} >
+            <div style={{ alignItems: "center", textAlign: "center", }}>
 
                 <p>How we work</p> <br />
                 <p>
@@ -29,13 +29,13 @@ export default function Work() {
                     a pick up online. We will do the rest!
                 </p>
             </div>
-            <Box sx={{ display: "flex",}} >
+            <Box sx={{ display: "flex", }} >
                 {workImages.map((working, index) => (
                     <img style={{ width: "15rem" }} src={working.image} key={index} alt="local" />
                 ))}
             </Box>
-            <Box sx={{  }}>
-                <img style={{  width: "93rem",}} src={process} alt="process" />
+            <Box sx={{}}>
+                <img style={{ width: "93rem", }} src={process} alt="process" />
             </Box>
         </Box>
     )
