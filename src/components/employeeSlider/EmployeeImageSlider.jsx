@@ -1,6 +1,6 @@
 import { Box, } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import testimonial from '/Users/gokulanand/Documents/react/laundry/src/components/images/testimonial.jpg'
+import testimonial from '../images/testimonial.jpg'
 
 
 const EmployeeImageSlider = ({ employeeImage }) => {

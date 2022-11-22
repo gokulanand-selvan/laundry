@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
 
 const slideStyles = {
     width: "100%",
@@ -14,21 +16,20 @@ const sliderStyles = {
 
 const ImageSlider = ({ slides }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    
+
     useEffect(() => {
-            const timer = setInterval(() => {
-                // console.log("render", currentIndex, slides.length );
-                if(currentIndex === slides.length - 1){
-                    setCurrentIndex(0);   
-                }
-                else setCurrentIndex(currentIndex + 1);
-            },5000)
-        
-            return () => clearInterval(timer)
+        const timer = setInterval(() => {
+            // console.log("render", currentIndex, slides.length );
+            if (currentIndex === slides.length - 1) {
+                setCurrentIndex(0);
+            }
+            else setCurrentIndex(currentIndex + 1);
+        }, 4000)
+
+        return () => clearInterval(timer)
 
 
-        },[currentIndex]);
-      
+    }, [currentIndex]);
 
     const slideStylesWidthBackground = {
         ...slideStyles,
@@ -36,7 +37,11 @@ const ImageSlider = ({ slides }) => {
     };
     return (
         <div style={sliderStyles}>
-            <div style={slideStylesWidthBackground}></div>
+            <div style={slideStylesWidthBackground}>
+                <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+                    {slides[currentIndex].tittle}
+                </AnimationOnScroll>
+            </div>
         </div>
     );
 };

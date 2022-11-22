@@ -9,13 +9,13 @@ const App = () => {
         [
 
             {
-                url: banner1, title: "banner1"
+                url: banner1, tittle: "banner1"
             },
             {
                 url: banner2, tittle: "banner2"
             },
             {
-                url: banner3, tittle: "banner2"
+                url: banner3, tittle: "banner3"
             }
         ];
     const containerStyles = {

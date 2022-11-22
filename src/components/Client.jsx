@@ -13,11 +13,11 @@ export default function Client() {
                 alignItems: "center",
                 position: "relative",
             }}>
-                <h2>
+                <h2 style={{color:"GrayText",fontWeight:"bolder",fontSize:"50px"}}>
                     Our Clients
                 </h2>
                 <p>
-                    Promac works some many big brands in short period of time.
+                    <i> Promac works with big brands in short period of time. </i>
                 </p>
             </Box>
         </Box>
