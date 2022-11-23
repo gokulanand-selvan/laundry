@@ -6,6 +6,7 @@ import Promac from "./images/logo.webp"
 import clip from "./images/clip.png"
 import EmployeeSlide from './employeeSlider/EmployeeSlide'
 import Work from './Work'
+import { motion } from "framer-motion"
 
 export default function Home() {
 
@@ -42,6 +43,10 @@ export default function Home() {
                 sideimage={clip}
             />
             <EmployeeSlide />
+            <motion.button
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
+  />
             <Work />
         </Box>
     )

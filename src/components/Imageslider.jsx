@@ -27,9 +27,8 @@ const ImageSlider = ({ slides }) => {
         }, 4000)
 
         return () => clearInterval(timer)
-
-
-    }, [currentIndex]);
+    },// eslint-disable-next-line 
+    [currentIndex]);
 
     const slideStylesWidthBackground = {
         ...slideStyles,

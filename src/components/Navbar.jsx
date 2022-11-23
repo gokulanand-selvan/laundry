@@ -5,37 +5,38 @@ import Promac from "./images/logo.webp"
 export const Navbar = () => {
 
     return (
-        <Box sx={{}}>
+            
+        <Box sx={{position:"fixed",width:"100%",zIndex:1,}}>
             <Box sx={{
-                background: "#f4f4f4",
-                // height: '50px',
-                opacity: 90,
             }} >
                 <ul style={{
                     display: "flex",
                     justifyContent: "space-evenly",
+                    height:"30px",
                     listStyleType: "none",
                     margin: '0px',
                     paddingTop: "13px",
                     width: "100%",
-                    backgroundColor: "grey",
+                    backgroundColor: "black",
                     // position:"fixed",
+                    alignItems:"center",
+                    textAlign:"center",
+                    paddingTop:"4px",
 
                 }}>
                     <li>
-                        <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>  Request </a>
+                        <a href='link' style={{ textDecoration: "none", color: ' white' }}>  Request </a>
                     </li>
                     <li>
-                        📞  <a href='link' style={{ textDecoration: "none", color: ' inherit' }}> 8754916425 </a>
+                        📞  <a href='link' style={{ textDecoration: "none", color: ' white' }}> 8754916425 </a>
                     </li>
                     <li>
-                        <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>  Find the laundry room colsest to you </a>
+                        <a href='link' style={{ textDecoration: "none", color: ' white' }}>  Find the laundry room colsest to you </a>
                     </li>
                 </ul>
             </Box>
 
             <Box sx={{ textAlign: "center", display: "flex", flexDirection: "row", justifyContent: "space-evenly" }} >
-                <a href='link' style={{ textDecoration: "none", color: ' inherit', paddingLeft: "84px" }}> <Image height="40px" width="120px" color="GrayText" src={Promac} /> </a>
                 <ul style={{
                     display: "flex",
                     justifyContent: "space-evenly",
@@ -44,11 +45,12 @@ export const Navbar = () => {
                     background: "white",
                     width: "100%",
                     // position:"fixed",
-                    // marginTop: '-14px',
-
+                    // marginTop: '-14px'
+                    height:"80px",
                 }}>
                     <li>
                     </li>
+                    <a href='link' style={{ textDecoration: "none", color: ' inherit', }}> <Image height="40px" width="120px" color="GrayText" src={Promac} /> </a>
                     <li>
                         <a href='link' style={{ textDecoration: "none", color: ' inherit' }}>   ABOUT</a>
                     </li>
