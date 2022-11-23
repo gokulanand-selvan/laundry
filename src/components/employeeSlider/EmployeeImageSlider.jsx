@@ -15,7 +15,8 @@ const EmployeeImageSlider = ({ employeeImage }) => {
             else setCurrentIndex(currentIndex + 1);
         }, 5000)
         return () => clearInterval(timer)
-    }, [currentIndex]);
+    },// eslint-disable-next-line
+     [currentIndex]);
 
     const imageStyle = {
         borderRadius: '90px',
@@ -24,7 +25,7 @@ const EmployeeImageSlider = ({ employeeImage }) => {
     }
     return (
         <Box>
-            <Box sx={{ position: "relative", backgroundImage: `url(${testimonial})`, backgroundRepeat: 'no-repeat', height: '100%', filter: "blur(8px)", webkiFilter: "blur(8px)", backgroundPosition: 'center', backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover", padding: '30% 0 30% 0' }}> </Box>
+            <Box sx={{ position: "relative", backgroundImage: `url(${testimonial})`, backgroundRepeat: 'no-repeat', height: '100%', filter: "blur(8px)", webkiFilter: "blur(8px)", backgroundPosition: "center",  backgroundSize: "cover", padding: '30% 0 30% 0' }}> </Box>
             <Box sx={{ position: "absolute", top: "55%", left: '50%', transform: 'translate(-50%, -50%)', }} >
                 <img style={imageStyle} src={employeeImage[currentIndex].name} alt="emim" />
                 <h1 style={{ fontSize: "50px", color: "gold", fontWeight: "bolder", }}> {employeeImage[currentIndex].identity} </h1>

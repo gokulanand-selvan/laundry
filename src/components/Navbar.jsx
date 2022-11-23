@@ -15,7 +15,6 @@ export const Navbar = () => {
                     height:"30px",
                     listStyleType: "none",
                     margin: '0px',
-                    paddingTop: "13px",
                     width: "100%",
                     backgroundColor: "black",
                     // position:"fixed",

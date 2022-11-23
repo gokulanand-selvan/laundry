@@ -41,6 +41,7 @@ const ImageSlider = ({ slides }) => {
                     {slides[currentIndex].tittle}
                 </AnimationOnScroll>
             </div>
+            
         </div>
     );
 };
